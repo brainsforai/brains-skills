@@ -1,0 +1,17 @@
+{
+  "name": "Shopping List",
+  "id": "shopping-list",
+  "type": "lobe",
+  "version": "1.0.0",
+  "description": "Auto-categorized shopping lists with one-time online price research and a preferred brands memory layer",
+  "domains": [
+    "personal",
+    "productivity"
+  ],
+  "fields": [
+    "title",
+    "tags"
+  ],
+  "author": "Brains",
+  "license": "MIT"
+}
