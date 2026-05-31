@@ -1,0 +1,21 @@
+{
+  "name": "Restaurant Review",
+  "id": "restaurant-review",
+  "type": "lobe",
+  "version": "1.0.0",
+  "description": "Log meal experiences from voice memo or chat — and answer \"what should I eat tonight?\" with ranked, dish-level recommendations from your history",
+  "domains": [
+    "personal",
+    "food"
+  ],
+  "fields": [
+    "slug",
+    "location",
+    "cuisine",
+    "rating",
+    "craveability",
+    "verdict"
+  ],
+  "author": "Brains",
+  "license": "MIT"
+}
