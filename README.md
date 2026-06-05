@@ -6,12 +6,13 @@
 
 Each skill is a self-contained folder: a `skill.md` you point your AI at, a page template to drop into your knowledge base, and a manifest. Five minutes from zero to a fully wired knowledge domain.
 
-Skills come in two kinds:
+Skills come in three kinds:
 
 - **Hippocampus** — whole-vault *filing systems*. They decide **where** a page belongs. Pick **one** (or none).
 - **Lobes** — note *templates* for one type of record. They decide **what** a page contains. Use **many**.
+- **Cortex** — *agents* that run a goal over time. They decide **what to do, when, and how** — acting across sessions and spawning lobe pages as the record of their work. Use **as needed**.
 
-A lobe defines a note's fields; it never picks a folder. At create time it asks the active hippocampus skill where to file the page and records that path in the page's `filed_at` field. With no hippocampus active, a lobe falls back to a flat `<skill-id>/` folder. The two compose: lobe = *what*, hippocampus = *where*.
+A lobe defines a note's fields; it never picks a folder. At create time it asks the active hippocampus skill where to file the page and records that path in the page's `filed_at` field. With no hippocampus active, a lobe falls back to a flat `<skill-id>/` folder. The three compose, mapping to the brain: lobe = *what*, hippocampus = *where*, cortex = *what to do* (the executive layer that pursues a goal and produces lobe pages as its record).
 
 ---
 
@@ -37,11 +38,17 @@ A lobe defines a note's fields; it never picks a folder. At create time it asks 
 | [project-tracker](skills/lobes/project-tracker/) | Track project status, blockers, risks, and team | [→ raw](https://raw.githubusercontent.com/spacecowboyian/brains-skills/main/skills/lobes/project-tracker/skill.md) |
 | [recipes](skills/lobes/recipes/) | Personal recipe database with meal planning support | [→ raw](https://raw.githubusercontent.com/spacecowboyian/brains-skills/main/skills/lobes/recipes/skill.md) |
 
+### ⚙️ Cortex — agents (run a goal over time)
+
+| Skill | Description | `skill.md` |
+|-------|-------------|------------|
+| [job-search](skills/cortex/job-search/) | Daily job-search agent: scan your boards, score each posting against your resume, and pre-fill strong-fit applications up to the final click — spawning a [job-application](skills/lobes/job-application/) page per match | [→ raw](https://raw.githubusercontent.com/spacecowboyian/brains-skills/main/skills/cortex/job-search/skill.md) |
+
 ---
 
 ## Quick install
 
-Paste into your AI chat — replace `<group>/<skill-id>` with `hippocampus/<name>` or `lobes/<name>` from the tables above:
+Paste into your AI chat — replace `<group>/<skill-id>` with `hippocampus/<name>`, `lobes/<name>`, or `cortex/<name>` from the tables above:
 
 ```
 Read https://raw.githubusercontent.com/spacecowboyian/brains-skills/main/skills/<group>/<skill-id>/skill.md
@@ -66,15 +73,15 @@ That's it. The `skill.md` file contains everything the AI needs: agent instructi
 Each skill folder contains:
 
 ```
-skills/<group>/<skill-id>/      ← group is `hippocampus` or `lobes`
+skills/<group>/<skill-id>/      ← group is `hippocampus`, `lobes`, or `cortex`
   skill.md          ← The install file. Agent instructions + page template, combined.
   skill.json        ← Machine-readable manifest (name, version, type, fields, tags).
-  template.md       ← Page template only (frontmatter + sections).
+  template.md       ← Page template only (frontmatter + sections). For a cortex: its working-memory pages.
   instructions.md   ← Agent instructions only.
   README.md         ← Human docs, capabilities, example queries.
 ```
 
-`skill.json` carries a `"type"` field — `"hippocampus"` or `"lobe"` — so tools can route automatically; the folder grouping mirrors it for humans browsing the repo.
+`skill.json` carries a `"type"` field — `"hippocampus"`, `"lobe"`, or `"cortex"` — so tools can route automatically; the folder grouping mirrors it for humans browsing the repo.
 
 `skill.md` is the primary artifact. Share it with your AI and it knows how to set up the project, create pages, and answer queries in that domain.
 

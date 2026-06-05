@@ -1,0 +1,27 @@
+{
+  "name": "Job Search",
+  "id": "job-search",
+  "type": "cortex",
+  "version": "1.0.0",
+  "description": "Daily job-search agent: load your profiles, scan enabled job boards, score each posting against your resume with a requirements matrix, and for strong fits pre-fill the application form and spawn a job-application page — stopping short of the final submit. Learns each board and application system over time.",
+  "domains": [
+    "work",
+    "productivity"
+  ],
+  "spawns": [
+    "job-application"
+  ],
+  "fields": [
+    "title",
+    "fit_threshold",
+    "target_roles",
+    "target_locations",
+    "enabled_search_sites",
+    "base_url",
+    "login_required",
+    "url_pattern",
+    "tags"
+  ],
+  "author": "Brains",
+  "license": "MIT"
+}
