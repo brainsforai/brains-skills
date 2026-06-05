@@ -86,7 +86,7 @@ tags: [job-search]
 | Current / most recent title | |
 
 ## Work authorization
-- Authorized to work in <country>:
+- Authorized to work in (country):
 - Requires sponsorship (now / future):
 
 ## Compensation

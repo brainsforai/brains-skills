@@ -12,12 +12,14 @@
     "job-application"
   ],
   "fields": [
-    "file_type",
-    "filed_at",
+    "title",
     "fit_threshold",
     "target_roles",
     "target_locations",
     "enabled_search_sites",
+    "base_url",
+    "login_required",
+    "url_pattern",
     "tags"
   ],
   "author": "Brains",
