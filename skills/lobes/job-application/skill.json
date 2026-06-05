@@ -1,0 +1,24 @@
+{
+  "name": "Job Application",
+  "id": "job-application",
+  "type": "lobe",
+  "version": "1.0.0",
+  "description": "Personalized daily job scan and application prep: score postings against your resume, pre-fill application forms up to the final submit, and learn each job board and application system over time",
+  "domains": [
+    "work",
+    "productivity"
+  ],
+  "fields": [
+    "title",
+    "company",
+    "role",
+    "status",
+    "fit_score",
+    "comp",
+    "apply_url",
+    "ats",
+    "source_site"
+  ],
+  "author": "Brains",
+  "license": "MIT"
+}
