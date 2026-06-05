@@ -9,6 +9,8 @@
 
 After reading this file, set up a personalized job search in the user's Brains vault. On the first run, onboard them: ask for their resume, index it to `job-search/resume.md`, build a seeker profile from it, and interview them for what a resume lacks (target pay, work authorization, remote/onsite requirement, EEO preferences, fit threshold). Then offer to run the first scan. On later runs, scan the enabled job boards, score each posting against the resume with a requirements matrix, and for strong fits pre-fill the live application form and create one job-application page per prepped job. Always stop short of the final submit and hand those steps to the user. End with a short digest.
 
+**Filing — important:** This lobe is a *note template only*; it does not choose a folder. Before creating pages, check whether a hippocampus skill (PARA, Johnny.Decimal, Zettelkasten, or Mind Palace) is active. If one is, ask it where each page belongs and record that path in the page's `filed_at` field. If no structure is active, fall back to `job-search/applications/<company>-<role>.md`. Never hardcode a location here.
+
 ---
 
 ## Agent Instructions

@@ -50,4 +50,4 @@ Turns the daily grind of job hunting into a repeatable workflow that gets smarte
 
 ## License
 
-MIT
+[MIT](../../LICENSE)

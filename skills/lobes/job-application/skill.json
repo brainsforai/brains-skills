@@ -9,14 +9,15 @@
     "productivity"
   ],
   "fields": [
-    "file_type",
-    "filed_at",
     "title",
     "company",
+    "role",
     "status",
     "fit_score",
+    "comp",
     "apply_url",
-    "tags"
+    "ats",
+    "source_site"
   ],
   "author": "Brains",
   "license": "MIT"
