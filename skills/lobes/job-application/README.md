@@ -11,6 +11,10 @@ Read https://raw.githubusercontent.com/spacecowboyian/brains-skills/main/skills/
 then set up the Job Application skill in my Brains knowledge base.
 ```
 
+## Recommended environment
+
+This skill is portable across assistants, but it shines in an agent that can drive a real browser and persist memory. **Claude Cowork** is the recommended setup: it pairs a browser agent (for navigating job boards and filling application forms) with a persistent Brains knowledge base (for the seeker profile and the per-site playbooks the skill builds up over time), so each daily run starts with full context and a scheduled task can deliver a morning digest on its own. Any assistant with web browsing and a place to store the profiles will work; the more capable the browser automation, the more of each application it can pre-fill for you.
+
 ## What this skill does
 
 Turns the daily grind of job hunting into a repeatable workflow that gets smarter every run. Your resume fills most of it; you confirm the rest once.
